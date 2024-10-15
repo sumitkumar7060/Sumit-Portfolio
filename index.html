@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Portfolio website using HTML, CSS and React JavaScript" />
+  <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio" />
+  <meta name="author" content="Sumit Chauhan" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumit Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Playfair+Display&display=swap"
+    rel="stylesheet" />
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <!--Navigation Bar-->
+    <header id="navbar" class="navbar">
+      <div class="logo">
+        <a href="#">
+          Sumit Chauhan
+        </a>
+      </div>
+      <nav class="navbar-menu">
+        <ul>
+          <li><a href="#intro">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="toggle-options">
+        <li><a href="#intro">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <!--Intro-->
+    <section id="intro" class="intro">
+      <div class="profile-logo ">
+        <img src="./images/sumit_profile.jpg" alt="" width="300" height="300" />
+      </div>
+      <div class="profile-name ">
+        <p class="header-styling">Hello!</p>
+        <p class="header-styling">
+          I'm <span class="purple-highlight">Sumit Kumar</span>.
+        </p>
+        <p class="desc-styling">
+          A <span class="purple-highlight">Software</span> Developer!
+        </p>
+      </div>
+    </section>
+    <!--About Me-->
+    <section id="about" class="about-me">
+      <div class="section-header-styling " role="heading" aria-label="heading">
+        <p>
+          Crafting Memorable
+          <span class="purple-highlight">Software developer Experiences </span>
+        </p>
+      </div>
+      <blockquote class="about-desc ">
+        <p>
+          "I have over a year of valuable experience in developing efficient and
+          scalable backend solutions, specializing in
+          <span class="purple-highlight">Python Flask API, generative AI, and LLMs</span>.
+          My expertise also extends to data-driven projects involving
+          <span class="purple-highlight">PDF and Excel file analytics</span>,
+          as well as <span class="purple-highlight">computer vision</span> applications.
+          I am passionate about creating powerful and innovative solutions that solve
+          complex problems and optimize business processes.
+        </p>
+        <p>
+          Throughout my experience, I have worked on a wide variety of projects,
+          including building robust APIs, handling large-scale data analytics, and
+          developing advanced AI-driven solutions. My hands-on experience has enabled me
+          to gain proficiency in not only backend development but also in working with
+          cutting-edge technologies like
+          <span class="purple-highlight">LLMs and generative AI</span> to enhance user
+          interactions and automate complex tasks. I continuously strive for excellence
+          and always aim to deliver efficient, high-quality solutions.
+        </p>
+        <p>
+          As a backend developer, I am eager to collaborate with clients and fellow
+          developers to deliver innovative solutions. I embrace challenges, value
+          feedback, and continuously work towards improving my skills in this ever-evolving
+          field."
+        </p>
+        <cite>- Sumit Kumar</cite>
+      </blockquote>
+    </section>
+    <!--Skills-->
+    <section id="skills" class="skills">
+      <div class="section-header-styling " role="heading" aria-label="heading">
+        <p class="purple-highlight">Skills</p>
+      </div>
+      <div id="skills-container">
+        <!-- Skill details will be dynamically added here -->
+      </div>
+    </section>
+    <!--Projects-->
+    <section id="projects" class="projects">
+      <div class="section-header-styling " role="heading" aria-label="heading">
+        <p class="purple-highlight">Projects</p>
+      </div>
+      <div id="projects-container">
+        <!-- Project details will be dynamically added here -->
+      </div>
+    </section>
+    <!--Experience-->
+    <section id="experience" class="experience">
+      <div class="section-header-styling " role="heading" aria-label="heading">
+        <p class="purple-highlight">Experience</p>
+      </div>
+      <div id="experience-container">
+        <!-- Experience details will be dynamically added here -->
+      </div>
+    </section>
+    <!--Education-->
+    <section id="education" class="education-div">
+      <div class="section-header-styling " role="heading" aria-label="heading">
+        <p class="purple-highlight">Education</p>
+      </div>
+      <div id="education-container" class="education">
+        <table id="education-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Board</th>
+              <th>Course</th>
+              <th>Year</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody id="education-details">
+            <!-- Education details will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer id="contact">
+      <h2>Let's collaborate!</h2>
+      <div id="contactContainer">
+        <div class="icon-styling">
+          <a href="tel:7060770352" target="_blank" rel="noreferrer">
+            <i class="fa-solid fa-phone fa-xl"></i>
+          </a>
+        </div>
+        <div class="icon-styling">
+          <a href="mailto:sumitkumarsimt1@gmail.com" target="_blank" rel="noreferrer">
+            <i class="fa-solid fa-envelope fa-2xl"></i>
+          </a>
+        </div>
+        <div class="icon-styling">
+          <a href="https://www.linkedin.com/in/sumit-kumar-1a8381151/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+        </div>
+        <div class="icon-styling">
+          <a href="https://github.com/sumitkumar7060" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <h3>
+        Copyright ©2024 All rights reserved | This website is made by Sumit Kumar using HTML, CSS & React JavaScript
+      </h3>
+      <button id="scrollToTopBtn">
+        <i class="fa-solid fa-hand-point-up fa-xl" style="color:#9681eb"></i></button </footer>
+  </main>
+  <script defer src="index.js"></script>
+</body>
+
+</html>
